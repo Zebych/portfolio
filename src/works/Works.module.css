@@ -1,15 +1,15 @@
-.skillsBlock {
+.worksBlock {
     height: 100vh;
     background-color: #28fdfd;
 }
 
-.skillsContainer {
+.worksContainer {
     flex-direction: column;
     justify-content: flex-start;
     background-color: bisque;
 }
 
-.skills {
+.works {
     border: 1px solid;
     width: 100%;
     display: flex;
