@@ -1,12 +1,39 @@
 .footerBlock {
-    height: 20vh;
+    /*min-height: 30vh;*/
     background-color: #28fdfd;
 }
 
 .footerContainer {
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*background-color: #a8773c;*/
+
+    display: flex;
+    background-color: #e79c44;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    background-color: #a8773c;
+}
+
+
+.boxBlock {
+   min-width:270px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a16e39;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 25%;
+    width: 12.5%;
+    background-color: #31b98b;
+}
+.rights{
+    display: flex;
+    justify-content: center
 }
 
 

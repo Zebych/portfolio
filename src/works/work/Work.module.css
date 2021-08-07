@@ -9,9 +9,11 @@
 }
 
 .icon {
-    height: 60px;
-    width: 60px;
-    background-color: #10694b;
+    height: 170px;
+    width: 100%;
+    background-image:url("https://lh3.googleusercontent.com/proxy/S5kiibrcKQ37fq_rHTalT9CmbftxGgk9skNDBVrFdE8uTBsn7PpQXvz0WN_QCn3-zwQUIG9j9wg9vHdcCu_Yt7Yfzpm5vk9ApWoP1tejOzJ7uuGr5i7ZehIXyiQ4OVWuz0bcfOiYMmKMZgOKSkrXz0T5QaHHUZrwtAGM-wR1AF4d3qURkv5cHvDVSKXG0UlCvyqVqwutw4hX7XdUx7ySPvUO1TCIXA");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;

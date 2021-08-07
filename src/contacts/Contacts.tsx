@@ -9,11 +9,11 @@ const Contacts = () => {
         <div className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Contacts'} />
-                <div className={style.inputBlock}>
+                <form className={style.inputBlock}>
                     <input type="text"/>
                     <input type="text"/>
-                    <textarea></textarea>
-                </div>
+                    <textarea className={style.inputTextarea}></textarea>
+                </form>
                 <Button buttonName={'Отправить'}/>
 
             </div>

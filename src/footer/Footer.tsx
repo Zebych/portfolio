@@ -8,10 +8,13 @@ const Footer = () => {
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <Title title={'Alexandr Zabirov'} />
-                <div>
-
+                <div className={style.boxBlock}>
+                    <div className={style.box}>box</div>
+                    <div className={style.box}>box</div>
+                    <div className={style.box}>box</div>
+                    <div className={style.box}>box</div>
                 </div>
-                <footer>Все права защищены</footer>
+                <footer className={style.rights}>Все права защищены</footer>
             </div>
 
         </div>

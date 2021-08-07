@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 50vh;
+    /*min-height: 50vh;*/
     background-color: #28fdfd;
 }
 
@@ -15,4 +15,6 @@
     align-items: center;
     background-color: #31b98b;
 }
-
+.inputTextarea{
+    width: -webkit-fill-available;
+}
