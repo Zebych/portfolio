@@ -1,0 +1,29 @@
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+    font-weight: 300;
+    color: #5e9e9f;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    background: #5e9e9f;
+    width: 100px;
+    height: 1px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+

@@ -2,7 +2,7 @@ import React from 'react';
 import style from './RemoteWork.module.css'
 import styleContainer from '../common/styles/Container.module.css'
 import Button from "../common/button/Button";
-import Title from "../common/titel/Title";
+import {Title} from "../common/title/Title";
 
 const RemoteWork = () => {
     return (

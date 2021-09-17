@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Contacts.module.css'
 import styleContainer from '../common/styles/Container.module.css'
 import Button from "../common/button/Button";
-import Title from "../common/titel/Title";
+import {Title} from "../common/title/Title";
 
 const Contacts = () => {
     return (
@@ -12,9 +12,10 @@ const Contacts = () => {
                 <form className={style.inputBlock}>
                     <input type="text"/>
                     <input type="text"/>
-                    <textarea className={style.inputTextarea}></textarea>
+                    <textarea />
+                    <Button buttonName={'Отправить'}/>
                 </form>
-                <Button buttonName={'Отправить'}/>
+
 
             </div>
         </div>

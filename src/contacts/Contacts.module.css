@@ -9,12 +9,20 @@
     background-color: #382b1b;
 }
 
-.inputBlock{
+.inputBlock {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
     background-color: #31b98b;
 }
-.inputTextarea{
-    width: -webkit-fill-available;
+
+.inputBlock input, .inputBlock textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .inputBlock{
+        width: 40%;
+    }
 }

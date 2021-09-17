@@ -1,13 +1,8 @@
 .footerBlock {
-    /*min-height: 30vh;*/
     background-color: #28fdfd;
 }
 
 .footerContainer {
-    /*flex-direction: column;*/
-    /*flex-wrap: wrap;*/
-    /*align-items: center;*/
-    /*background-color: #a8773c;*/
 
     display: flex;
     background-color: #e79c44;
@@ -19,7 +14,7 @@
 
 
 .boxBlock {
-   min-width:270px;
+    min-width: 15%;
     display: flex;
     justify-content: space-between;
     background-color: #a16e39;
@@ -31,7 +26,8 @@
     width: 12.5%;
     background-color: #31b98b;
 }
-.rights{
+
+.rights {
     display: flex;
     justify-content: center
 }
