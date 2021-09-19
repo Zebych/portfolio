@@ -1,0 +1,46 @@
+@import '../common/styles/sass/variables';
+
+.footerBlock {
+  background-color: $blackBackgroundColor;
+
+  .footerContainer {
+    display: flex;
+    background-color: $blackBackgroundColor;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .boxBlock {
+      min-width: 15%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #a16e39;
+      flex-wrap: wrap;
+
+      .box {
+        height: 25%;
+        width: 12.5%;
+        background-color: #31b98b;
+      }
+    }
+
+    .rights {
+      display: flex;
+      justify-content: center;
+      color: $brightTextColor;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

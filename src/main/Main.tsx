@@ -1,17 +1,20 @@
 import React from 'react';
-import style from './Main.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import style from './Main.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
+import photo from '../common/pictures/uupoT-rlqWM.jpg'
 
 const Main = () => {
     return (
         <div className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.mainContainer}` }>
                 <div className={style.greetings}>
-                    <span>Hi There</span>
-                    <h1>I am</h1>
+                    <span>Alex Zabirov</span>
+                    <h1>Front-end Developer</h1>
                     <p>Front-end Developer</p>
                 </div>
-                <div className={style.photo}></div>
+                <div className={style.photo}>
+                    <img src={photo}/>
+                </div>
             </div>
         </div>
     );

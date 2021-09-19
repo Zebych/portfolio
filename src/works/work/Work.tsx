@@ -1,11 +1,12 @@
 import React from 'react';
-import style from './Work.module.css'
+import style from './Work.module.scss'
+import Button from "../../common/button/Button";
 
 const Work = () => {
     return (
         <div className={style.work}>
           <div className={style.icon}>
-              <button className={style.button}>Смотреть</button>
+              <Button buttonName={'Watch'}/>
           </div>
               <h3>Название</h3>
               <span className={style.description}>

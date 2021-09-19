@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Contacts.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import style from './Contacts.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
 import Button from "../common/button/Button";
 import {Title} from "../common/title/Title";
 

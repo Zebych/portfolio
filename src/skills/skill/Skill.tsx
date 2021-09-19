@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Skill.module.css'
+import style from './Skill.module.scss'
 import {Title} from "../../common/title/Title";
 
 const Skill = () => {

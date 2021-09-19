@@ -1,0 +1,20 @@
+.worksBlock {
+  background-color: #28fdfd;
+
+  .worksContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: bisque;
+
+    .works {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+
