@@ -1,12 +1,19 @@
+@import '../common/styles/sass/variables';
+
 .worksBlock {
-  background-color: #28fdfd;
+  background-color: $lightBackgroundColor;
+  min-height: 75vh;
 
   .worksContainer {
     flex-direction: column;
     justify-content: flex-start;
-    background-color: bisque;
+    font-family: 'Poppins', sans-serif;
+    .title {
+      margin-top: 10vh;
+    }
 
     .works {
+
       border: 1px solid;
       width: 100%;
       display: flex;

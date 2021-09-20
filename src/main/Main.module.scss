@@ -1,16 +1,18 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins/mixins';
 
 
 .mainBlock {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $darkBackgroundColor;
 
   .mainContainer {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 20vh 40px;
 
     .greetings {
-      background-color: #c9d8e5;
+      background-color: $darkBackgroundColor;
       @media screen and(max-width: 620px) {
         width: auto;
       }
@@ -20,39 +22,28 @@
       }
 
       span {
-        color: $selectedTextColor;
-        font-family: 'Grechen Fuemen', cursive;
-
+        @include text(('Grechen Fuemen', cursive), 35px, $selectedTextColor);
       }
 
       h1 {
-        font-size: 35px;
-        color: $brightTextColor;
+        @include text(('Poppins', cursive), 35px, $brightTextColor);
         width: 100%;
+      }
 
+      p {
+        @include text(('Poppins', cursive), 15px, $brightTextColor);
       }
     }
 
     .photo {
-  /*    background-image: url('../common/pictures/uupoT-rlqWM.jpg');
       background-size: cover;
       border-radius: 10px;
-      min-width: 430px;
-      min-height: 50%;
-      background-color: #c9d8e5;
-      @media screen and (min-width: 540px){
-      }*/
-      width: 30%;
-      height: 50%;
-      img{
-        background-size: cover;
-        border-radius: 10px;
-        min-width: 30%;
-        min-height: 50%;
-      }
+      width: 430px;
 
-      background-color: #c9d8e5;
-      @media screen and (min-width: 540px){
+      img {
+        background-color: #c9d8e5;
+        border-radius: 10px;
+        width: 100%;
       }
     }
   }

@@ -1,3 +1,6 @@
+@import "../../common/styles/sass/mixins/mixins";
+@import "../../common/styles/sass/variables";
+
 .skill {
   width: 250px;
   background-color: #434d56;
@@ -5,15 +8,22 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 5vh;
+  @include text(('Poppins', cursive), 35px, $brightTextColor);
 
   .icon {
-    height: 60px;
-    width: 60px;
-    background-color: #10694b;
+    height: 10vh;
+    width: 10vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .description {
-    background-color: #31b98b;
+  p {
+    @include text(('Poppins', cursive), 15px, $brightTextColor);
   }
 }
 

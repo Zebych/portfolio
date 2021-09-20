@@ -1,3 +1,6 @@
+@import '../../common/styles/sass/mixins/mixins';
+@import '../../common/styles/sass/variables';
+
 .work {
   width: 250px;
   background-color: #434d56;
@@ -6,19 +9,37 @@
   align-items: center;
   text-align: center;
 
-  .icon {
-    height: 170px;
+  .image {
+    height: 300px;
     width: 100%;
-    background-image: url("https://lh3.googleusercontent.com/proxy/S5kiibrcKQ37fq_rHTalT9CmbftxGgk9skNDBVrFdE8uTBsn7PpQXvz0WN_QCn3-zwQUIG9j9wg9vHdcCu_Yt7Yfzpm5vk9ApWoP1tejOzJ7uuGr5i7ZehIXyiQ4OVWuz0bcfOiYMmKMZgOKSkrXz0T5QaHHUZrwtAGM-wR1AF4d3qURkv5cHvDVSKXG0UlCvyqVqwutw4hX7XdUx7ySPvUO1TCIXA");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.2;
+    }
   }
 
+  h3 {
+    @include text(('Poppins', cursive), 20px, $brightTextColor)
+  }
+span{
+  @include text(('Poppins', cursive), 15px, $brightTextColor)
+}
   .description {
-    background-color: #31b98b;
+    //background-color: ;
   }
 
 }
