@@ -57,8 +57,8 @@ const Skills = () => {
                     <Skill style={js} title={'Java Script'}/>
                     <Skill style={ts} title={'Type Script'}/>
                     <Skill style={react} title={'React'}/>
-                    <Skill style={redux} title={'Redux'}/>
                     <Skill style={node} title={'Node JS'}/>
+                    <Skill style={redux} title={'Redux'}/>
                     <Skill style={materialUi} title={'Material ui'}/>
                     <Skill style={git} title={'GIT'}/>
                     <Skill style={storybook} title={'Story book'}/>

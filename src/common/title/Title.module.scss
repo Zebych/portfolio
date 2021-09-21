@@ -10,10 +10,11 @@
   line-height: 1.2;
   letter-spacing: 5px;
   position: relative;
-  @include text(('Poppins', cursive), 35px, $selectedTextColor);
+  @include text(('Poppins', cursive), 30px, $selectedTextColor);
 
   h2 {
     margin: 0;
+    word-wrap: break-word;
   }
 
   &::before {

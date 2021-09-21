@@ -35,9 +35,11 @@
   h3 {
     @include text(('Poppins', cursive), 20px, $brightTextColor)
   }
-span{
-  @include text(('Poppins', cursive), 15px, $brightTextColor)
-}
+
+  span {
+    @include text(('Poppins', cursive), 15px, $brightTextColor)
+  }
+
   .description {
     //background-color: ;
   }

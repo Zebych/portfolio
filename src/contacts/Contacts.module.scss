@@ -1,19 +1,21 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins/mixins';
+
 .contactsBlock {
-  background-color: #28fdfd;
+  background-color: $darkBackgroundColor;
 
   .contactsContainer {
     flex-direction: column;
     align-items: center;
-    background-color: #382b1b;
 
     .inputBlock {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 20%;
-      background-color: #31b98b;
 
       & input, & textarea {
+        @include text(('Poppins', cursive), 15px, $blackBackgroundColor);
         width: 100%;
       }
 

@@ -1,4 +1,5 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins/mixins';
 
 .footerBlock {
   background-color: $blackBackgroundColor;
@@ -15,20 +16,13 @@
       min-width: 15%;
       display: flex;
       justify-content: space-between;
-      background-color: #a16e39;
       flex-wrap: wrap;
-
-      .box {
-        height: 25%;
-        width: 12.5%;
-        background-color: #31b98b;
-      }
     }
 
     .rights {
       display: flex;
       justify-content: center;
-      color: $brightTextColor;
+      @include text(('Poppins', cursive), 15px, $brightTextColor)
     }
   }
 }

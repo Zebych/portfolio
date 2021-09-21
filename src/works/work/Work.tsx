@@ -7,7 +7,7 @@ type WorkPropsType = {
     title:string
     shortDescription?:string
 }
-const Work = (props: WorkPropsType) => {
+const Work: React.FC<WorkPropsType> = (props) => {
     return (
         <div className={style.work}>
             <div style={props.style} className={style.image} >
@@ -17,7 +17,6 @@ const Work = (props: WorkPropsType) => {
             <span className={style.description}>
                   {props.shortDescription}
               </span>
-
         </div>
     );
 };

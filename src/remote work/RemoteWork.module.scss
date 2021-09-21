@@ -1,10 +1,13 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins/mixins';
+
 .remoteBlock {
-  background-color: #28fdfd;
+  background-color: $lightBackgroundColor;
 
   .remoteContainer {
     flex-direction: column;
     align-items: center;
-    background-color: #a16e39;
+    background-color: $lightBackgroundColor;
   }
 
 }
