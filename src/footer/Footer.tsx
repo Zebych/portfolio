@@ -22,8 +22,8 @@ const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <Title title={'Alex Zabirov'}/>
                 <div className={style.boxBlock}>
-                    <Box style={telegram}/>
                     <Box style={whatsApp}/>
+                    <Box style={telegram}/>
                     <Box style={vk}/>
                 </div>
                 <footer className={style.rights}>Все права защищены</footer>

@@ -8,6 +8,11 @@
     flex-direction: column;
     align-items: center;
     background-color: $lightBackgroundColor;
+    padding: 15px;
+    @include text(('Poppins', cursive), 15px, $brightTextColor);
+    .button{
+      padding: 15px;
+    }
   }
 
 }

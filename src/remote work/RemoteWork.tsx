@@ -9,7 +9,11 @@ const RemoteWork = () => {
         <div className={style.remoteBlock}>
             <div className={`${styleContainer.container} ${style.remoteContainer}`}>
                 <Title title={'Remote work'} />
-               <Button buttonName={'Hire me'}/>
+                <p>Рассматриваю варианты удаленной работы</p>
+                <div className={style.button}>
+                    <Button buttonName={'Hire me'}/>
+                </div>
+
             </div>
         </div>
     );

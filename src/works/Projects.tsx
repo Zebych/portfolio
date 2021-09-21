@@ -14,12 +14,12 @@ const Projects = () => {
         backgroundImage: `url(${todoListImage})`
     }
     return (
-        <div className={style.worksBlock}>
-            <div className={`${styleContainer.container} ${style.worksContainer}`}>
+        <div className={style.projectsBlock}>
+            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <div className={style.title}>
                     <Title title={'Projects'}/>
                 </div>
-                <div className={style.works}>
+                <div className={style.projects}>
                     <Work style={social} title={'Social Network'}
                           shortDescription={'social network for communication'}/>
                     <Work style={todoList} title={'Todo List'} shortDescription={'to-do list/task'}/>

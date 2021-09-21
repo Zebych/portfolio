@@ -1,10 +1,10 @@
 @import '../common/styles/sass/variables';
 
-.worksBlock {
+.projectsBlock {
   background-color: $lightBackgroundColor;
   min-height: 75vh;
 
-  .worksContainer {
+  .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
@@ -12,9 +12,7 @@
       margin-top: 10vh;
     }
 
-    .works {
-
-      border: 1px solid;
+    .projects {
       width: 100%;
       display: flex;
       justify-content: space-evenly;
