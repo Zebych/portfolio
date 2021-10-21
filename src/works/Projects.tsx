@@ -22,14 +22,14 @@ const Projects = () => {
                 </div>
                 {/*<Fade direction={"right"} duration={3000}>*/}
                     <div className={style.projects}>
-                        <Fade  direction={"right"} delay={500}>
+                        <Fade  direction={"right"} delay={150} triggerOnce={true} >
                             <Work style={social} title={'Social Network'}
                                   shortDescription={'social network for communication'}/>
                         </Fade>
-                        <Fade  direction={"right"} delay={550}>
+                        <Fade  direction={"right"} delay={200} triggerOnce={true}>
                             <Work style={todoList} title={'Todo List'} shortDescription={'to-do list/task'}/>
                         </Fade>
-                        <Fade  direction={"right"} delay={600}>
+                        <Fade  direction={"right"} delay={250} triggerOnce={true}>
                             <Work style={social} title={'Social Network'}/>
                         </Fade>
                     </div>

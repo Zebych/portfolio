@@ -53,7 +53,7 @@ const Skills = () => {
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={style.skills}>
-                    <Fade direction={"right"} delay={600}>
+                    <Fade direction={"up"} delay={200} triggerOnce={true}>
                         <Skill style={htmlIcon} title={'HTML'}/>
                         <Skill style={sass} title={'SASS'}/>
                         <Skill style={js} title={'Java Script'}/>

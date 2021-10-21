@@ -25,7 +25,7 @@ const Main = () => {
             <div className={`${styleContainer.container} ${styles.mainContainer}`}>
 
                 <div className={styles.greetings}>
-                    <Fade direction={"right"} triggerOnce={true} >
+                    <Fade direction={"down"} triggerOnce={true} >
                         <h1>Alex Zabirov</h1>
                         <ReactTypingEffect
                             text={["Front-end Developer"]}
