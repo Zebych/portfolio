@@ -8,16 +8,6 @@ import ReactTypingEffect from "react-typing-effect";
 import Tilt from 'react-parallax-tilt';
 
 const Main = () => {
-    /*  const particlesInit = (main: any) => {
-          console.log(main);
-      };
-
-      const particlesLoaded = (container: any) => {
-          // container._options.backgroundMask.enable=true
-        // return  container.actualOptions.zLayers = 1
-          console.log(container);
-      };
-  */
     return (
 
         <div className={styles.mainBlock}>
@@ -50,8 +40,6 @@ const Main = () => {
             <Particles
                 className={styles.particles}
                 id="tsparticles"
-                /*  init={particlesInit}
-                  loaded={particlesLoaded}*/
                 options={{
                     fpsLimit: 60,
                     interactivity: {

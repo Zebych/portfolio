@@ -23,14 +23,16 @@ const Projects = () => {
                 {/*<Fade direction={"right"} duration={3000}>*/}
                     <div className={style.projects}>
                         <Fade  direction={"right"} delay={150} triggerOnce={true} >
-                            <Work style={social} title={'Social Network'}
+                            <Work link={'https://zebych.github.io/-social-network/'}
+                                  style={social} title={'Social Network'}
                                   shortDescription={'social network for communication'}/>
                         </Fade>
                         <Fade  direction={"right"} delay={200} triggerOnce={true}>
-                            <Work style={todoList} title={'Todo List'} shortDescription={'to-do list/task'}/>
+                            <Work  link={'https://zebych.github.io/todo-redux-toolkit/'}
+                                   style={todoList} title={'Todo List'} shortDescription={'to-do list/task'}/>
                         </Fade>
                         <Fade  direction={"right"} delay={250} triggerOnce={true}>
-                            <Work style={social} title={'Social Network'}/>
+                            <Work link={'https://zebych.github.io/counter/'} style={social} title={'Counter'}/>
                         </Fade>
                     </div>
                 {/*</Fade>*/}

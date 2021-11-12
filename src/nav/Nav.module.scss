@@ -1,5 +1,6 @@
 @import '../common/styles/sass/variables';
 
+/*
 .nav {
   border: 1px solid;
   width: 300px;
@@ -9,5 +10,37 @@
 
   a {
     color: $brightTextColor;
+  }
+}*/
+.link{
+  text-decoration: none;
+  color: blue;
+  margin: 10px;
+}
+.link:hover{
+  color: chartreuse;
+}
+.active{
+  color: #bbffbb;
+}
+
+.header{
+  display: flex;
+  width: 280px;
+
+  transition-duration: 500ms;/*время всплытия окна*/
+  transform: translate(-220px);/* где отобразить*/
+  &:hover{
+    transition-duration: 500ms;
+    transform: translate(0);
+  }
+
+  .block{
+    width: 21px;
+    height: 21px;
+
+    margin: 10px;
+
+    background: cadetblue;
   }
 }

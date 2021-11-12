@@ -13,17 +13,18 @@
     align-items: center;
     padding: 15px;
 
+    .rights {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      @include text(('Poppins', cursive), 15px, $brightTextColor)
+    }
+
     .boxBlock {
       min-width: 10%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-    }
-
-    .rights {
-      display: flex;
-      justify-content: center;
-      @include text(('Poppins', cursive), 15px, $brightTextColor)
     }
   }
 }
