@@ -2,8 +2,9 @@
 @import '../../common/styles/sass/variables';
 
 .work {
-  width: 250px;
-  background-color: #434d56;
+  width: 320px;
+  height: 500px;
+  //background-color: $blockDarkBackgroundColor;
   display: flex;
   flex-direction: column;
   align-items: center;

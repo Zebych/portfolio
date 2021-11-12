@@ -4,7 +4,6 @@ import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from "../common/title/Title";
 import telegramImage from "../assets/image/Telegram-logo.png";
 import vkImage from "../assets/image/192px-Vk_Logo.svg.png";
-import whatsAppImage from "../assets/image/WhatsApp_logo-color-vertical.svg.png";
 import linkedinImage from "../assets/image/free-icon-linkedin-174857.png";
 import {Box} from "./box/Box";
 

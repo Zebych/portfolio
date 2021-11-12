@@ -30,7 +30,6 @@
 
       span {
         @include text(('Poppins', cursive), 25px, $brightTextColor);
-        //width: 100%;
       }
 
       p {
@@ -40,18 +39,13 @@
 
     .photo {
       background-size: cover;
+
       width: 280px;
       z-index: 2;
       position: relative;
       transition: 0.5s;
-      @media screen and(max-width: 670px) {
+      @media screen and(max-width: 500px) {
         width: 50vh;
-      }
-
-      img {
-        @media screen and(max-width: 670px) {
-          width: 60vh;
-        }
       }
 
       &:hover {
@@ -67,6 +61,9 @@
         left: 25px;
         top: -25px;
         z-index: -1;
+        @media screen and(max-width: 500px) {
+          max-width: 110%;
+        }
       }
     }
   }

@@ -1,0 +1,32 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins/mixins';
+
+.header{
+  display: flex;
+  width: 280px;
+  z-index: 2;
+
+
+  transition-duration: 500ms;/*время всплытия окна*/
+  transform: translate(-275px);/* где отобразить*/
+  &:hover{
+    transition-duration: 500ms;
+    transform: translate(0);
+  }
+  .link{
+    @include text(('Poppins', cursive), 20px, $brightTextColor);
+    text-decoration: none;
+    margin: 10px;
+  }
+  .link:hover{
+    color: $selectedTextColor;
+  }
+  .active{
+    color: $selectedTextColor;
+  }
+
+  .block{
+    padding: 10px;
+    @include text(('Poppins', cursive), 20px, $brightTextColor);
+  }
+}

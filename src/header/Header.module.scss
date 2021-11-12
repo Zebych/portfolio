@@ -2,8 +2,9 @@
 
 .header{
     height: 80px;
-    background-color: $darkBackgroundColor;
+    //background-color: $darkBackgroundColor;
     display: flex;
-    //justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    z-index: 2;
 }

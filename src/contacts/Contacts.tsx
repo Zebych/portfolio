@@ -3,22 +3,19 @@ import style from './Contacts.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
 import Button from "../common/button/Button";
 import {Title} from "../common/title/Title";
-import Login from "../common/form/inputForm";
 
 const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id={'contacts'} className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <Title title={'Contacts'} />
+                <Title title={'Contacts'}  />
                 <form className={style.inputBlock}>
-                    {/*<Login/>*/}
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea />
+                    <input type="text" placeholder={"Name"}/>
+                    <input type="text" placeholder={"Email"}/>
+                    <textarea placeholder={"Your message"}/>
                     <div className={style.button}>
                         <Button buttonName={'Отправить'}/>
                     </div>
-
                 </form>
 
 
