@@ -8,7 +8,7 @@ const Contacts = () => {
     return (
         <div id={'contacts'} className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <Title title={'Contacts'}  />
+                <Title title={'Contacts'}/>
                 <form className={style.inputBlock}>
                     <input type="text" placeholder={"Name"}/>
                     <input type="text" placeholder={"Email"}/>
@@ -17,8 +17,6 @@ const Contacts = () => {
                         <Button buttonName={'Отправить'}/>
                     </div>
                 </form>
-
-
             </div>
         </div>
     );
