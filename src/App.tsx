@@ -5,14 +5,12 @@ import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import Projects from "./works/Projects";
 import RemoteWork from "./remote work/RemoteWork";
-import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
-import {HashRouter} from "react-router-dom";
+import Contacts from "./contacts/Contacts";
 
 function App() {
     return (
         <div className="App">
-            <HashRouter>
                 <Header/>
                 <Main/>
                 <Projects/>
@@ -20,7 +18,6 @@ function App() {
                 <RemoteWork/>
                 <Contacts/>
                 <Footer/>
-            </HashRouter>
         </div>
     );
 }
