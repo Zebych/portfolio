@@ -5,8 +5,7 @@ import Button from "../common/button/Button";
 import {Title} from "../common/title/Title";
 import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import {contactsTC} from "../redux/contacts-reducer";
-import {useDispatch, useSelector} from "react-redux";
-import {AppStateType} from "../redux/store";
+import {useDispatch} from "react-redux";
 
 export type ContactsFormPropsType = {
     name: string
@@ -15,8 +14,7 @@ export type ContactsFormPropsType = {
 }
 const ContactsForm: FC<InjectedFormProps<ContactsFormPropsType>> = ({handleSubmit, error}) => {
     return (
-
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit} className={style.inputBlock}>
             <Field placeholder={'your name'} name={'name'} component={'input'}/>
             <Field placeholder={'your email'} name={'email'} component={'input'}/>
             <Field placeholder={'your message'} name={'message'} component={'textarea'}/>
@@ -24,25 +22,15 @@ const ContactsForm: FC<InjectedFormProps<ContactsFormPropsType>> = ({handleSubmi
             <div className={style.button}>
                 <Button buttonName={'Send'}/>
             </div>
-            {/*<input type="text" placeholder={"Your mame"}/>*/}
-            {/*<input type="text" placeholder={"Your email"}/>*/}
-            {/*<textarea placeholder={"Your message"}/>*/}
-            {/*<div className={style.button}>*/}
-            {/*    <Button buttonName={'Отправить'}/>*/}
-            {/*</div>*/}
         </form>
 
-    );
-};
+    )
+}
 
 const ContactsReduxForm = reduxForm<ContactsFormPropsType>({form: 'contacts'})(ContactsForm)
-/*
-type ContactsPropsType={
-  contacts:(formData: ContactsFormPropsType)=>void
-}*/
-const Contacts = (props: any) => {
-    const dispatch=useDispatch()
-    // const contactsState=useSelector<AppStateType>(state=>state.contacts)
+
+const Contacts = () => {
+    const dispatch = useDispatch()
     const onSubmit = (formData: ContactsFormPropsType) => {
         dispatch(contactsTC(formData.name, formData.email, formData.message))
     }
@@ -50,13 +38,10 @@ const Contacts = (props: any) => {
         <div id={'contacts'} className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Contacts'}/>
-                <div className={style.inputBlock}>
-                    <ContactsReduxForm onSubmit={onSubmit}/>
-                </div>
-
+                <ContactsReduxForm onSubmit={onSubmit}/>
             </div>
         </div>
 
-    );
-};
+    )
+}
 export default Contacts;
