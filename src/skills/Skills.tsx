@@ -54,16 +54,16 @@ const Skills = () => {
                 <Title title={'Skills'}/>
                 <div className={style.skills}>
                     <Fade direction={"up"} delay={200} triggerOnce={true}>
-                        <Skill style={htmlIcon} title={'HTML'}/>
-                        <Skill style={sass} title={'SASS'}/>
+                        <Skill style={react} title={'React'}/>
+                        <Skill style={redux} title={'Redux'}/>
                         <Skill style={js} title={'Java Script'}/>
                         <Skill style={ts} title={'Type Script'}/>
-                        <Skill style={react} title={'React'}/>
                         <Skill style={node} title={'Node JS'}/>
-                        <Skill style={redux} title={'Redux'}/>
                         <Skill style={materialUi} title={'Material ui'}/>
-                        <Skill style={git} title={'GIT'}/>
                         <Skill style={storybook} title={'Story book'}/>
+                        <Skill style={git} title={'GIT'}/>
+                        <Skill style={htmlIcon} title={'HTML'}/>
+                        <Skill style={sass} title={'SASS'}/>
                     </Fade>
                 </div>
             </div>

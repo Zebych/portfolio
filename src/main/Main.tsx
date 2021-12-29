@@ -9,34 +9,24 @@ import Tilt from 'react-parallax-tilt';
 
 const Main = () => {
     return (
-
         <div className={styles.mainBlock}>
-
             <div className={`${styleContainer.container} ${styles.mainContainer}`}>
-
                 <div className={styles.greetings}>
-                    <Fade direction={"down"} triggerOnce={true} >
+                    <Fade direction={"down"} triggerOnce={true}>
                         <h1>Alex Zabirov</h1>
                         <ReactTypingEffect
                             text={["Front-end Developer"]}
                         />
                     </Fade>
                 </div>
-
-
                 <div className={styles.photo}>
-                    <Fade direction={"right"} triggerOnce={true} >
-                        <Tilt
-                            tiltReverse={true}
-                        >
-                            <img src={photo}/>
+                    <Fade direction={"right"} triggerOnce={true}>
+                        <Tilt tiltReverse={true}>
+                            <img src={photo} alt={''}/>
                         </Tilt>
                     </Fade>
                 </div>
-
             </div>
-
-
             <Particles
                 className={styles.particles}
                 id="tsparticles"
