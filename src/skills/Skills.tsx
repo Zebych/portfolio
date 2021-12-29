@@ -12,7 +12,7 @@ import ReduxImage from '../assets/image/redux.png'
 import StorybookImage from '../assets/image/22632046.png'
 import MaterialUiImage from '../assets/image/logo.png'
 import GitImage
-    from '../assets/image/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-5b80546c513c68.2896615215351368763328.png'
+    from '../assets/image/git.png'
 import NodeImage
     from '../assets/image/kisspng-web-development-node-js-javascript-software-develo-node-js-icon-5b4aff47d622e1.0467371515316416718771.png'
 import {Fade} from "react-awesome-reveal";

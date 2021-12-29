@@ -3,7 +3,7 @@ import React from "react";
 
 type BoxPropsType = {
     icon: string
-    link?:string
+    link:string
 }
 export const Box: React.FC<BoxPropsType> = (props) => {
     return <div className={style.box}  >
