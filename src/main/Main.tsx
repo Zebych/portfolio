@@ -29,11 +29,10 @@ const Main = () => {
                         <Tilt
                             tiltReverse={true}
                         >
-                            <img src={photo}/>
+                            <img src={photo} alt={''}/>
                         </Tilt>
                     </Fade>
                 </div>
-
             </div>
 
 

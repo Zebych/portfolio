@@ -11,7 +11,7 @@ export const TitleBox: React.FC<BoxPropsType> = (props) => {
         <div className={style.box}>
             <a href={props.link}>
                 <h3>{props.title}</h3>
-                <img src={props.icon} className={style.img}/>
+                <img src={props.icon} alt={''} className={style.img}/>
             </a>
         </div>
     )
