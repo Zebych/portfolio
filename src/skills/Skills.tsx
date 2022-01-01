@@ -11,6 +11,8 @@ import ReactImage from '../assets/image/1200px-React-icon.svg.png'
 import ReduxImage from '../assets/image/redux.png'
 import StorybookImage from '../assets/image/22632046.png'
 import MaterialUiImage from '../assets/image/logo.png'
+import jestImage from '../assets/image/jest.png'
+import restApiImage from '../assets/image/rest-api.png'
 import GitImage
     from '../assets/image/git.png'
 import NodeImage
@@ -48,6 +50,12 @@ const Skills = () => {
     const storybook = {
         backgroundImage: `url(${StorybookImage})`
     }
+    const jest = {
+        backgroundImage: `url(${jestImage})`
+    }
+    const restApi = {
+        backgroundImage: `url(${restApiImage})`
+    }
     return (
         <div id={'skills'} className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
@@ -56,12 +64,14 @@ const Skills = () => {
                     <Fade direction={"up"} delay={200} triggerOnce={true}>
                         <Skill style={react} title={'React'}/>
                         <Skill style={redux} title={'Redux'}/>
-                        <Skill style={js} title={'Java Script'}/>
                         <Skill style={ts} title={'Type Script'}/>
+                        <Skill style={restApi} title={'Rest API'}/>
+                        <Skill style={jest} title={'Jest'}/>
+                        <Skill style={git} title={'GIT'}/>
                         <Skill style={node} title={'Node JS'}/>
                         <Skill style={materialUi} title={'Material ui'}/>
                         <Skill style={storybook} title={'Story book'}/>
-                        <Skill style={git} title={'GIT'}/>
+                        <Skill style={js} title={'Java Script'}/>
                         <Skill style={htmlIcon} title={'HTML'}/>
                         <Skill style={sass} title={'SASS'}/>
                     </Fade>

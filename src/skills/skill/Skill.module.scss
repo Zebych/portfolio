@@ -10,10 +10,7 @@
   text-align: center;
   margin-bottom: 5vh;
   @include text(('Poppins', cursive), 35px, $brightTextColor);
-  /*  transition: 0.5s;
-    &:hover {
-      transform: scale(1.2, 1.2)
-    }*/
+
   .iconBox {
     height: 80px;
     width: 80px;
@@ -26,16 +23,14 @@
     .icon {
       transform: rotate(-45deg);
       height: 57px;
-      width: 57px;
+      width: 59px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       margin: 10px;
-      //display: flex;
     }
   }
   .text{
-    //background-color: #434d56;
     p {
       @include text(('Poppins', cursive), 15px, $brightTextColor);
     }

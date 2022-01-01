@@ -14,7 +14,6 @@ const Skill: React.FC<SkillPropsType> = (props) => {
             </div>
             <div className={style.text}>
                 <Title title={props.title}/>
-                <p>текстовое описание</p>
             </div>
 
         </div>

@@ -1,5 +1,5 @@
 import {Dispatch} from "redux";
-import { contactsAPI } from "../contactsAPI/contactsAPI";
+import { contactsAPI } from "../api/contactsAPI";
 const initState={
     sentMessage:false,
     disable:false,
