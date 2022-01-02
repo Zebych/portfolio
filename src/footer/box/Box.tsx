@@ -5,10 +5,12 @@ type BoxPropsType = {
     icon: string
     link: string
 }
-export const Box: React.FC<BoxPropsType> = (props) => {
-    return <div className={style.box}>
-        <a href={props.link}>
-            <img src={props.icon} alt={''} className={style.img}/>
-        </a>
-    </div>
+export const Box: React.FC<BoxPropsType> = ({link, icon}) => {
+    return (
+        <div className={style.box}>
+            <a href={link}>
+                <img src={icon} alt={''} className={style.img}/>
+            </a>
+        </div>
+    )
 }

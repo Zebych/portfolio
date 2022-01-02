@@ -6,12 +6,12 @@ type BoxPropsType = {
     link: string
     title: string
 }
-export const TitleBox: React.FC<BoxPropsType> = (props) => {
+export const TitleBox: React.FC<BoxPropsType> = ({icon,link,title}) => {
     return (
         <div className={style.box}>
-            <a href={props.link}>
-                <h3>{props.title}</h3>
-                <img src={props.icon} alt={''} className={style.img}/>
+            <a href={link}>
+                <h3>{title}</h3>
+                <img src={icon} alt={''} className={style.img}/>
             </a>
         </div>
     )

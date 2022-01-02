@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Work.module.scss'
+import styles from './Work.module.scss'
 import Button from "../../common/button/Button";
 import gitImage from "../../assets/image/git.png";
 import {TitleBox} from './titleBox/TitleBox';
@@ -8,21 +8,27 @@ type WorkPropsType = {
     style: {}
     link: string
     linkToGit: string
-    linkToGitBack?: string
     title: string
     shortDescription: string
 }
-const Work: React.FC<WorkPropsType> = (props) => {
+const Work: React.FC<WorkPropsType> = (
+    {
+        style,
+        link,
+        linkToGit,
+        title,
+        shortDescription
+    }) => {
     return (
-        <div className={style.work}>
-            <div style={props.style} className={style.image}>
-                <Button buttonName={'Watch'} link={props.link}/>
+        <div className={styles.work}>
+            <div style={style} className={styles.image}>
+                <Button buttonName={'Watch'} link={link}/>
             </div>
-            <div className={style.titleBox}>
-                <TitleBox title={props.title} icon={gitImage} link={props.linkToGit}/>
+            <div className={styles.titleBox}>
+                <TitleBox title={title} icon={gitImage} link={linkToGit}/>
             </div>
-            <span className={style.description}>
-                  {props.shortDescription}
+            <span className={styles.description}>
+                  {shortDescription}
               </span>
         </div>
     );

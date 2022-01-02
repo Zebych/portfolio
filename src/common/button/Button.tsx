@@ -5,9 +5,9 @@ type ButtonPropsType = {
     buttonName: string
     link?: string | undefined
 }
-const Button: React.FC<ButtonPropsType> = (props) => {
+const Button: React.FC<ButtonPropsType> = ({link, buttonName}) => {
     return <button className={style.button}>
-        <a href={props.link}>{props.buttonName}</a>
+        <a href={link}>{buttonName}</a>
     </button>
 };
 

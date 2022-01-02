@@ -12,7 +12,6 @@ const Contacts = () => {
                 <ContactsForm/>
             </div>
         </div>
-
     )
 }
 export default Contacts;
