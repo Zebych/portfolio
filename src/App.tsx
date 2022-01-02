@@ -9,14 +9,14 @@ import Contacts from "./contacts/Contacts";
 
 function App() {
     return (
-        <div className="App">
-                <Header/>
-                <Main/>
-                <Projects/>
-                <Skills/>
-                <PastExperience/>
-                <Contacts/>
-                <Footer/>
+        <div>
+            <Header/>
+            <Main/>
+            <Projects/>
+            <Skills/>
+            <PastExperience/>
+            <Contacts/>
+            <Footer/>
         </div>
     );
 }
