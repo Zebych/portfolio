@@ -9,12 +9,14 @@
     align-items: center;
     padding: 15px;
 
+
     .inputBlock {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 50%;
       color: $brightTextColor;
+      z-index: 2;
 
       & input, & textarea {
         @include text(('Poppins', cursive), 15px, $blackBackgroundColor);
