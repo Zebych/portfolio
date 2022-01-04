@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/Zebych/portfolio/issues"
   },
-  "homepage": "https://github.com/Zebych/portfolio#readme",
   "dependencies": {
     "express": "^4.17.2",
     "express-favicon": "^2.0.1"
