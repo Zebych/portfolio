@@ -9298,6 +9298,13 @@ react-parallax-tilt@^1.5.71:
   resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.5.84.tgz#d3a0734711748c69051754d2b0c29fb43308bcce"
   integrity sha512-0IL2q8ZfAsOrUknwpOFDej2FeuSwqcClf87seznNWb6/sm5c+XubOxSb3fFtOuGLUNq4zPo7jGhuNjd+25kyyw==
 
+react-particles-js@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-3.6.0.tgz#3c9c22fbf93150d1fd1a190cd060ec1d6dcaa373"
+  integrity sha512-gQzUKZgPpjdplhAtskLnn9frLyei6uGuWabNtBGWnr3eZpHXfXJO1F8sedPhO29xfpKixE3HEejwGQAld8K16Q==
+  dependencies:
+    lodash "^4.17.11"
+
 react-redux@^7.2.5:
   version "7.2.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.6.tgz#49633a24fe552b5f9caf58feb8a138936ddfe9aa"
