@@ -43,12 +43,12 @@ export const ContactsForm = memo(() => {
 
     return (
         <form onSubmit={formik.handleSubmit} className={styles.inputBlock}>
-            <input placeholder={'your name'}/>
-            <input placeholder={'your email'}/>
+            <input placeholder={'how can I call you'} {...formik.getFieldProps('name')}/>
+            <input placeholder={'your email'} {...formik.getFieldProps('email')}/>
             {formik.touched.email && formik.errors.email && (
                 <div style={{color: 'red'}}>{formik.errors.email}</div>
             )}
-            <textarea placeholder={'your message'}/>
+            <textarea placeholder={'message'} {...formik.getFieldProps('message')}/>
             {formik.touched.message && formik.errors.message && (
                 <div style={{color: 'red'}}>{formik.errors.message}</div>
             )}

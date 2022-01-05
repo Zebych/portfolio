@@ -44,12 +44,6 @@ const Projects = () => {
                               style={todoList} title={'Todo List'}
                               shortDescription={ProjectDescription.TodoListToolkit}/>
                     </Fade>
-                    <Fade direction={"right"} delay={200} triggerOnce={true}>
-                        <Work link={LinksToProjects.TodoListSaga}
-                              linkToGit={LinksToGit.TodoListSagas}
-                              style={todoList} title={'Todo List'}
-                              shortDescription={ProjectDescription.TodoListSaga}/>
-                    </Fade>
                     <Fade direction={"right"} delay={150} triggerOnce={true}>
                         <Work link={LinksToProjects.SocialNetwork}
                               linkToGit={LinksToGit.SocialNetwork}
