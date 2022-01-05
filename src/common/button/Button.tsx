@@ -7,7 +7,7 @@ type ButtonPropsType = {
 }
 const Button: React.FC<ButtonPropsType> = ({link, buttonName}) => {
     return <button className={style.button}>
-        <a href={link}>{buttonName}</a>
+        <a href={link} target="_blank">{buttonName}</a>
     </button>
 };
 

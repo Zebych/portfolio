@@ -22,7 +22,7 @@ const Work: React.FC<WorkPropsType> = (
     return (
         <div className={styles.work}>
             <div style={style} className={styles.image}>
-                <Button buttonName={'Watch'} link={link}/>
+                <Button buttonName={'Watch'} link={link} />
             </div>
             <div className={styles.titleBox}>
                 <TitleBox title={title} icon={gitImage} link={linkToGit}/>
