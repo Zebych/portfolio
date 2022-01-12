@@ -1,4 +1,4 @@
-export enum LinksToProjects {
+export enum LinksTo {
     SocialNetwork = 'https://zebych.github.io/-social-network/',
     TodoList = 'https://zebych.github.io/TodoList/',
     TodoListToolkit = 'https://zebych.github.io/todo-redux-toolkit/',

@@ -7,7 +7,7 @@ import vkImage from "../assets/image/192px-Vk_Logo.svg.png";
 import linkedinImage from "../assets/image/free-icon-linkedin-174857.png";
 import codeWars from "../assets/image/codewars.png"
 import {Box} from "./box/Box";
-import {FooterLinks} from "../common/enums/linksToProjects";
+import {FooterLinks} from "../common/enums/linksTo";
 
 const Footer = () => {
     return (

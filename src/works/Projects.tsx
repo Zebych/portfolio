@@ -8,7 +8,7 @@ import socialNetworkImage
 import todoListImage from '../assets/image/todo-list_318-10185.jpg'
 import shopImage from '../assets/image/shop_test.png'
 import {Fade} from "react-awesome-reveal";
-import {LinksToGit, LinksToProjects} from "../common/enums/linksToProjects";
+import {LinksToGit, LinksTo} from "../common/enums/linksTo";
 import {ProjectDescription} from "../common/enums/projectDescription";
 
 const Projects = () => {
@@ -29,23 +29,23 @@ const Projects = () => {
                 </div>
                 <div className={style.projects}>
                     <Fade direction={"right"} delay={250} triggerOnce={true}>
-                        <Work link={LinksToProjects.Shop} linkToGit={LinksToGit.Shop} style={shop} title={
+                        <Work link={LinksTo.Shop} linkToGit={LinksToGit.Shop} style={shop} title={
                            'Shop-test' } shortDescription={ProjectDescription.Shop}/>
                     </Fade>
                     <Fade direction={"right"} delay={200} triggerOnce={true}>
-                        <Work link={LinksToProjects.TodoList}
+                        <Work link={LinksTo.TodoList}
                               linkToGit={LinksToGit.TodoList}
                               style={todoList} title={'Todo List'}
                               shortDescription={ProjectDescription.TodoList}/>
                     </Fade>
                     <Fade direction={"right"} delay={200} triggerOnce={true}>
-                        <Work link={LinksToProjects.TodoListToolkit}
+                        <Work link={LinksTo.TodoListToolkit}
                               linkToGit={LinksToGit.TodoListToolkit}
                               style={todoList} title={'Todo List'}
                               shortDescription={ProjectDescription.TodoListToolkit}/>
                     </Fade>
                     <Fade direction={"right"} delay={150} triggerOnce={true}>
-                        <Work link={LinksToProjects.SocialNetwork}
+                        <Work link={LinksTo.SocialNetwork}
                               linkToGit={LinksToGit.SocialNetwork}
                               style={social} title={'Social Network'}
                               shortDescription={ProjectDescription.SocialNetwork}/>

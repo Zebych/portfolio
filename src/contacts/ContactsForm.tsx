@@ -53,7 +53,7 @@ export const ContactsForm = memo(() => {
                 <div style={{color: 'red'}}>{formik.errors.message}</div>
             )}
             <div className={styles.button}>
-                <Button buttonName={'Send'}>
+                <Button buttonName={'Send'} >
                     buy
                 </Button>
             </div>
