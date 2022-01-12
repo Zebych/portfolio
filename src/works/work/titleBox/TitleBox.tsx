@@ -9,7 +9,7 @@ type BoxPropsType = {
 export const TitleBox: React.FC<BoxPropsType> = ({icon,link,title}) => {
     return (
         <div className={style.box}>
-            <a href={link}>
+            <a href={link} target="_blank" rel="noreferrer">
                 <h3>{title}</h3>
                 <img src={icon} alt={''} className={style.img}/>
             </a>

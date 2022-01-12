@@ -8,7 +8,7 @@ type BoxPropsType = {
 export const Box: React.FC<BoxPropsType> = ({link, icon}) => {
     return (
         <div className={style.box}>
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
                 <img src={icon} alt={''} className={style.img}/>
             </a>
         </div>
